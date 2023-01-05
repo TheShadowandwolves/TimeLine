@@ -196,7 +196,8 @@
     position: relative;
   }
   #sunclock,
-  #suntime{
+  #suntime,
+  #nightclock{
     font-size: 1rem;
     color: var(--main-text-color);
     padding: 2rem 0;
