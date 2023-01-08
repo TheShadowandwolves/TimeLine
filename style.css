@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Orbitron');
+
 :root {
     --main-bg-color: #fff;
     --main-text-color: #888888;
@@ -129,7 +131,8 @@
 
   #Date {
     font-size: 1.5rem;
-    color: var(--main-text-color);
+    color: #4fff60;
+    text-shadow: rgb(113, 255, 37) 1px 0 10px;
     padding: 2rem 0;
     font-family: monospace;
     text-transform: uppercase;
@@ -186,8 +189,13 @@
   }
 
   #d-clock{
+    font-family: 'Orbitron', sans-serif;
+    color: #ff6666;
+    text-shadow: #f00 1px 0 10px;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
     font-size: 3rem;
-    color: var(--main-text-color);
     padding: 2rem 0;
     font-family: monospace;
     text-transform: uppercase;

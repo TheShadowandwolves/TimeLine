@@ -174,6 +174,7 @@ if (lset != 0 || lrise != 0) {
             timearraym[i] = timearraym[i] - 60;
             timearrayh[i] += 1;
         }
+        console.log(timearrayh[i]);
     }
 
     for (let i = 0; i < 4; i++) {
