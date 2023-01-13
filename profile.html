@@ -9,42 +9,41 @@
 </head>
 <body>
    
-      <div id="ctitle" class="slide header">
-        <div class="text">
+    <div id="ctitle" class="slide header">
+        <div class="text" id="ct">
             <div id="title" class="title">
-                <span class="t1 t">T</span>
-                <span class="t t2">h</span>
-                <span class="t t3">e</span>
-                <span class="t t4">S</span>
-                <span class="t t5">h</span>
-                <span class="t t6">a</span>
-                <span class="t t7">d</span>
-                <span class="t t8">o</span>
-                <span class="t t9">w</span>
-                <span class="t t10">a</span>
-                <span class="t t11">n</span>
-                <span class="t t12">d</span>
-                <span class="t t13">W</span>
-                <span class="t t14">o</span>
-                <span class="t t15">l</span>
-                <span class="t t16">v</span>
-                <span class="t t17">e</span>
-                <span class="t t18">s</span>
-        
+                <span id="ts" class="t t1">T</span>
+                <span id="ts" class="t t2">h</span>
+                <span id="ts" class="t t3">e</span>
+                <span id="ts" class="t t4">S</span>
+                <span id="ts" class="t t5">h</span>
+                <span id="ts" class="t t6">a</span>
+                <span id="ts" class="t t7">d</span>
+                <span id="ts" class="t t8">o</span>
+                <span id="ts" class="t t9">w</span>
+                <span id="ts" class="t t10">a</span>
+                <span id="ts" class="t t11">n</span>
+                <span id="ts" class="t t12">d</span>
+                <span id="ts" class="t t13">W</span>
+                <span id="ts" class="t t14">o</span>
+                <span id="ts" class="t t15">l</span>
+                <span id="ts" class="t t16">v</span>
+                <span id="ts" class="t t17">e</span>
+                <span id="ts" class="t t18">s</span>
             </div>
-          </div>
-          <svg>
+        </div>
+        <svg>
             <filter id="fire">
               <feTurbulence id="turbulence" baseFrequency= "0.1 0.1" numOctaves="2" seed="3">
-                <animate attributeName="baseFrequency" dur="30s" values="0.1 0.1;0.12 0.3" repeatCount="indefinite"></animate>
+                <animate attributeName="baseFrequency" dur="100s" values="0.1 0.1;0.12 0.3" repeatCount="indefinite"></animate>
               </feTurbulence>
               <feDisplacementMap in="SourceGraphic" scale="20">
               </feDisplacementMap>
             </filter>
-          </svg>
+        </svg>
 
         <div class="sub">
-            <h2 class="sub-title">Greetings, weary traveler! <br>
+            <h2 id="subct" class="sub-title">Greetings, weary traveler! <br>
                 I, a daring adventurer, welcome you to my humble profile page. <br>
                 It is a pleasure to share with you my tales of valor and deeds of daring-do. <br>
                 Please, take a moment to peruse my page and do not hesitate to seek me out should you have need of a companion for your own quests.
@@ -61,39 +60,67 @@
             <a id="h-link" href="profile.html"> <img src="github.png"  id="img-con"></a>
         </div>
     </div> -->
-      </div>
+    </div>
       
-      <div id="slide1" class="slide">
-      <div class="gity-page">
-        <div class="left-side-gity">
-            <img class="img-gity" src="62835930.jfif">
-            <h5 class="title-gity">Leo Blam</h5>
-            <h6 class="subtitle-gity">TheShadowandwolves</h6>
-            <h7 class="text-gity">Student on Machon Lev. Doing my Bachelor of Computer Science. I speak 4 official languages: German, English, Hebrew (partional), Russian.</h7>
-            <br>
-            <a href="#" class="btn-gity">View Profile</a>
+    <div id="slide1" class="slide">
+        <div class="menu-pic"></div>
+        <div class="gity-page">
+            <div class="nav-gity">
+                <ul class="top-menu-gity">
+                    <li id="overview" onclick="switchDiv('div1')">Overview</li>
+                    <li id="repository"  onclick="switchDiv('div2')">Repositories</li>
+                </ul>
+            </div>
+        <div class="line-gity"></div>
+        <div class="side-gity">
+            <div class="left-side-gity">
+                <img class="img-gity" src="62835930.jfif">
+                <h5 class="title-gity">Leo Blam</h5>
+                <h6 class="subtitle-gity">TheShadowandwolves</h6>
+                <h7 class="text-gity">Student on Machon Lev. Doing my Bachelor of Computer Science. I speak 4 official languages: German, English, Hebrew (partional), Russian.</h7>
+                <br>
+                <a href="#" class="btn-gity">View Profile</a>
+            </div>
+            <div class="right-side-gity">
+                <div id="div1" class="content">
+                    <div class="text-overview">
+                        <div class="tm"> TheShadowandwolves/README.md <br></div>
+                            <li class="tg">👋 Hi, I'm @TheShadowandwolves acc The Leo I don't know what to write. I don't know whats github, but uploading some codes here (and for sure donwnload some content from here). Enjoy, using my codes for personal use. And please do not use it to cheat for your homeworks! But I am not going to watch over you, it is your choice! Side note: I don't take any responsibility over it! Not everything here may be correctly working!
+                            </li>
+                            <li class="tg" >👀 I'm interested in: Computers, like hardware and gaming. Love designing and programming is in my second list. I am not good at all, but want to become better! Love soccer. Watching movies and play games. Side note: This was when I started studying, now I don't have time anymore for this. I still like hardware and technologies. But I find newer hobbies to use my time wisely.
+                            </li>
+                            <li class="tg">🌱 I'm currently learning: Bachelor for Computer Science. Yeah, you get it! I am able to learn something!!! Note 2022: Yep, that what I thought, now I just want to burst in flames. But don't think I am not able to learn! I am clever as hell. Just not for some stuff.
+                            </li>
+                            <li class="tg">💞️ I'm looking to collaborate on: probably with myself. Joking. For now, Idk. Note 2022: Please collaborate with me. Yeah, now I know things. Searching for a job, need to use some knowledge of my studies in practice! Any ideas?
+                            </li>
+                            <li class="tg">📫 How to reach me: Never! For sure my friends, but I am not a guy who loves messaging. But you can try! I am friendly... Note 2022: Possible you asking yourself why I am making these notes? Well, its for me. It is a long time and could potencially become a good remembering for later years. I am still friendly, if you want to reach me, try LinkedIn or my Instagram: theShadowandwolves
+                            </li>
+                            <li class="tg">see you and enjoy your live!!!!</li>
+                    </div>
+                </div>
+                <div id="div2" class="content">div 2</div>
+            </div>
         </div>
-      </div>
-      </div>
-      
-      <div id="slide2" class="slide">
+    </div>
+    <div id="slide2" class="slide">
         <div class="ctitle">
           <h1>Slide 2</h1>
           <p>Lorem ipsum dolor sit amet, in velit iudico mandamus sit, persius dolorum in per, postulant mnesarchum cu nam. Malis movet ornatus id vim, feugait detracto est ea, eam eruditi conceptam in. Ne sit explicari interesset. Labores perpetua cum at. Id viris docendi denique vim.</p>
         </div>
         <img class="cimg" src="https://picsum.photos/980/600">
         <img class="cimg" src="https://picsum.photos/960/600"> 
-      </div>
+    </div>
       
-      <div id="slide3" class="slide">
+    <div id="slide3" class="slide">
         <div class="ctitle">
           <h1>Slide 3</h1>
           <p>Lorem ipsum dolor sit amet, in velit iudico mandamus sit, persius dolorum in per, postulant mnesarchum cu nam. Malis movet ornatus id vim, feugait detracto est ea, eam eruditi conceptam in. Ne sit explicari interesset. Labores perpetua cum at. Id viris docendi denique vim.</p>
         </div>
-      </div>
+    </div>
       
-      <div id="slide4" class="slide header">
-          <h1>The End</h1>
-      </div>
+    <div id="slide4" class="slide header">
+        <h1>The End</h1>
+    </div>
 </body>
+<script src="scriptP.js"></script>
 </html>

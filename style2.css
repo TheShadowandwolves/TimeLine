@@ -1,5 +1,5 @@
-
-
+@import url('https://fonts.googleapis.com/css?family=Orbitron');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 html {
   height: 100%;
   overflow: hidden;
@@ -24,21 +24,26 @@ body{
     align-items: center;
     text-align: center;
     font-weight: bolder;
-    font-size: 2.5rem;
+    /* font-size: 2.5rem; */
+    
     cursor: pointer;
     /* margin-top: 10%; */
 }
 
 .t{
-    margin: 0 4px;
-    font-size: 2rem;
-    background-image: url("color.png");
-    background-size: contain;
+    margin: 0 2px;
+    font-size: 7vw;
+    background-image: url("fire.gif");
+    background-size: cover;
     background-clip: text;
     -webkit-background-clip: text;
     color : transparent;
     border-radius: 8px;
     mix-blend-mode:lighten;
+    position: relative;
+    padding-top: 20vh;
+    width: 90%;
+    text-align: center;
 }
 
 .title:hover .t1,
@@ -130,21 +135,29 @@ a{
     border-radius: 50%;
 
 }
+/*button*/
+
 .sub{
-    padding: 0 250px;
+    /* padding: 0 25vw; */
+    background: rgba(51, 51, 51, 0.14);
+    width: fit-content;
+    margin: auto;
+    margin-left: 3vw;
+    margin-right: 3vw;
 }
 
 .sub-title{
     /* display: flex; */
-    text-indent: 50px;
+    /* text-indent: 50px; */
     position: relative;
     justify-content: center;
     align-items: center;
     text-align: center;
     font-weight: bolder;
-    font-size: 1.5rem;
+    font-size: 3vmin;
     cursor: pointer;
-    padding: 0 30px;
+    /* padding: 0 30px; */
+    margin: 0;
     /* margin-top: 10%; */
 }
 
@@ -159,44 +172,165 @@ a{
 }
 
 .gity-page{
-    display: inline-block;
+    
+    margin: 0;
+}
+
+.side-gity{
+    display: flex;
+    /* flex:1 ; */
+    height: 100vh;
+    
 }
 
 .left-side-gity{
     display: flex;
     flex-direction: column;
-    float: left;
-    width: 30%;
+    /* flex: 1; */
+    width: 100%;
+    margin: 0;
+    /* margin-right: 20px; */
+}
+
+.right-side-gity{
+    display: flex;
+  /* flex: 1; */
+    width: 200vw;
+    height: auto;
     margin: 0;
 }
 
 .img-gity{
-    width: 120px;
-    height: 120px;
+    max-width: 20vmin;
+    max-height: 20vmin;
     border-radius: 50%;
-    margin: 20vh 20vh 0;
+    margin: 10vh 10vw 0;
     background-size: contain;
     
 }
 
 .title-gity{
-    padding-left: 20vh;
-    font-size: 18px;
+    padding-left: 11vw;
+    font-size: 2vw;
     color: white;
     margin: 0;
     margin-top: 10px;
-
+    /* width: 9vw; */
 }
 
 .subtitle-gity{
-    padding-left: 20vh;
-    font-size: 12px;
+    padding-left: 11vw;
+    font-size: 1.5vw;
     color: rgb(147, 147, 147);
     margin: 0;
     margin-top: 5px;
     margin-bottom: 10px;
 }
 
+.text-gity{
+    padding-left: 11vw;
+    font-size: 1.5vmin;
+    color: white;
+    margin: 0;
+    width: 16vw;
+    letter-spacing: 2px;
+}
+
+.btn-gity{
+    width: 15vw;
+    height: 3vh;
+    background-color: rgba(98, 98, 98, 0.675);
+    border: 1px solid rgb(171, 171, 171);
+    border-radius: 8px;
+    margin: 0;
+    margin-left: 11vw;
+    color: white;
+    font-size: 2vmin;
+    font-weight: bold;
+    letter-spacing: 2px;
+    cursor: pointer;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+
+.line-gity{
+    width: 100%;
+    height: 1px;
+    background-color: rgba(171, 171, 171, 0.173);
+    margin: 0;
+    z-index: -1;
+    margin-top: 14vh;
+    position: absolute;
+}
+
+.top-menu-gity{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    white-space: nowrap;
+    width: 100%;
+    height: 50px;
+    /* justify-content: center; */
+    align-items: center;
+    text-align: center;
+    color: white;
+    letter-spacing: 2px;
+    font-size: 1.5vw;
+    margin-top: 9vh;
+    margin-left: 37vw;
+    cursor: pointer;
+}
+
+#overview{
+    margin-right: 50px;
+}
+
+.content{
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 17vh;
+    max-width: 60vw;
+    height: auto;
+    border-radius: 8px;
+    border: 2px solid rgb(171, 171, 171);
+    /* background-color: rgba(98, 98, 98, 0.675); */
+}
+
+.menu-pic{
+    width: 100%;
+    height: 60px;
+    margin: 0;
+    background-image: url("github-menu.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#overview{
+    list-style-image: url("Science-Literature-icon.png");
+}
+
+.text-overview{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2vw;
+    word-spacing: 2px;
+    line-height: 20px;
+    padding: 8px;
+}
+
+#repository{
+    list-style-image: url("Book-icon.png");
+}
+
+.tg{
+    margin: 2px 0;
+}
+
+.tm{
+    font-size: smaller;
+}
 
 
 
@@ -220,6 +354,7 @@ p {
     position: relative;
     /* padding: 25vh 10%; */
     min-height: 100vh;
+    height: fit-content;
     width: 100vw;
     box-sizing: border-box;
     box-shadow: 0 -1px 10px rgba(0, 0, 0, .7);
@@ -296,11 +431,13 @@ p {
   #slide1:before {
     background:rgba(34, 34, 34, 0.937);
     transform: translateZ(-1px) scale(2);
+    
   }
   
   #slide2 {
     background-image: url("https://picsum.photos/960/400");
     z-index:2;
+   
   }
   
   #slide3:before {
@@ -311,14 +448,13 @@ p {
   #slide4 {
     background: #222;
   }
-
+/* 
   .text
 {
   position: relative;
   padding-top: 20vh;
   width: 100%;
   text-align: center;
-/*   filter: url(#fire); */
   filter: url(#fire);
 }
 .text .t
@@ -326,7 +462,6 @@ p {
   position: relative;
   color: #ffeb3b;
   font-weight: 600;
-  font-size: 7rem;
   -webkit-box-reflect: below -120px linear-gradient(transparent,rgba(0,0,0,0.8));
   text-shadow: 0 0 10px #ff8c3b,
                0 0 40px #ff8c3b,
@@ -358,4 +493,4 @@ svg{
     font-size: 550%;
     -webkit-box-reflect: below -40px linear-gradient(transparent,rgba(0,0,0,0.8));
   }
-}
+} */
