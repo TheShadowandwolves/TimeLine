@@ -332,6 +332,105 @@ a{
     font-size: smaller;
 }
 
+.repos{
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 1vmin;
+  align-items: start;
+  justify-content: start;
+  padding: 0.9vmin;
+  /* min-width: 40vmin;
+  height: 20vmin; */
+}
+
+.repo{
+  /* grid-row: inherit;
+  grid-column: inherit; */
+  border: #fff solid 1px;
+  padding: 2px;
+  border-radius: 5px;
+  display: grid;
+
+  grid-template-columns: 1fr 7vmin;
+  gap: 1vmin;
+}
+
+.repo-link{
+  text-decoration: none;
+  color: rgb(0, 145, 255);
+  font-size: 2vmin;
+  margin-right: 3vmin;
+  margin-top: 0.2vmin;
+  margin-left: 0.5vmin;
+
+}
+
+.repo-status{
+  font-size: 1.5vmin;
+  color: rgba(244, 244, 244, 0.499);
+  padding: 0;
+  margin: 0.5vmin;
+  border: rgba(255, 255, 255, 0.511) solid 1px;
+  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  /* margin-left: 3vmin; */
+  /* margin-top: 1.5vmin; */
+}
+
+.repo-lang{
+  font-size: 1.5vmin;
+  color: rgb(244, 244, 244);
+  list-style: none;
+  margin-left: 1vmin;
+  margin-top: 2vmin;
+  padding: 0;
+  height: 4vmin;
+  /* margin-bottom: 1vmin; */
+  /* list-style-type: circle; */
+  /* list-style: repeating-linear-gradient(45deg, #fff, #fff 10px, #000 10px, #000 20px); */
+}
+ 
+.lang-stat::before{
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 2vw; /* Also needed for space (tweak if needed) */
+  margin-left: 0.5vw; /* Also needed for space (tweak if needed) */
+  font-size: 2.5vw;
+  /* margin: -3px; */
+  margin-bottom: 0;
+  vertical-align:middle;
+}
+
+#clblue:before{
+  color: blue; /* Change the color */
+}
+#clred:before{
+  color: red; /* Change the color */
+}
+#clorange:before{
+  color: rgb(255, 115, 0); /* Change the color */
+}
+
+#message{
+  width: 100%;
+  height: auto;
+  background-color: red;
+  font-size: 2vh;
+  color: white;
+  padding: 5px;
+  z-index: 1;
+  position: relative;
+  top: 0;
+  left: 0;
+  align-items: center;
+  justify-content: end;
+}
+
+
 
 
 
