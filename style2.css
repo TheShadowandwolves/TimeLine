@@ -6,7 +6,7 @@ html {
 }
 
 body{
-    background: linear-gradient(90deg, #4dc9e6 ,#210cae);
+    /* background: linear-gradient(90deg, #4dc9e6 ,#210cae); */
     margin:0;
     padding:0;
     perspective: 1px;
@@ -158,6 +158,7 @@ a{
     cursor: pointer;
     /* padding: 0 30px; */
     margin: 0;
+    margin-top: 20vh;
     /* margin-top: 10%; */
 }
 
@@ -172,7 +173,7 @@ a{
 }
 
 .gity-page{
-    
+    background-color: #333;
     margin: 0;
 }
 
@@ -206,7 +207,7 @@ a{
     border-radius: 50%;
     margin: 10vh 10vw 0;
     background-size: contain;
-    
+    z-index: 1;
 }
 
 .title-gity{
@@ -260,7 +261,7 @@ a{
     height: 1px;
     background-color: rgba(171, 171, 171, 0.173);
     margin: 0;
-    z-index: -1;
+    z-index: 0;
     margin-top: 14vh;
     position: absolute;
 }
@@ -300,10 +301,10 @@ a{
 
 .menu-pic{
     width: 100%;
-    height: 60px;
+    height: 7vmin;
     margin: 0;
     background-image: url("github-menu.png");
-    background-size: contain;
+    background-size:cover;
     background-repeat: no-repeat;
 }
 
@@ -356,7 +357,7 @@ a{
   border: #fff solid 1px;
   padding: 2px;
   border-radius: 5px;
-  width: auto;
+  width: 17vw;
   display: grid;
   margin: 0 0.5vw;
   grid-template-columns: 1fr 7vw;
@@ -423,6 +424,18 @@ a{
   color: rgb(255, 115, 0); /* Change the color */
 }
 
+#clgrey::before{
+  color: grey;
+}
+
+#cllightblue::before{
+  color: rgb(0, 145, 255);
+}
+
+#clpink::before{
+  color: rgb(255, 0, 115);
+}
+
 #message{
   width: 100%;
   height: auto;
@@ -438,11 +451,38 @@ a{
   justify-content: end;
 }
 
+.top-link-header{
+  display:flex;
+  flex-direction: column;
+  width: 70%;
+  height: 40vh;
+  margin: 0 auto;
+  border: 1px solid #333;
+ margin-top: 2vh; 
+ border-radius: 8px;
+}
 
 
+.main-img-link-header{
+  width: 100%;
+  height: 20vh;
+  background-image: url("1635183210641.jfif");
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 1px solid #333;
+  border-radius: 8px 8px 0 0;
+  margin-left: -1px;
+}
 
-
-
+.split-link-header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  height: 20vh;
+  margin: 2vmin 2px;
+}
 
 
 
@@ -461,14 +501,14 @@ p {
     position: relative;
     /* padding: 25vh 10%; */
     min-height: 100vh;
-    height: fit-content;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     box-sizing: border-box;
     box-shadow: 0 -1px 10px rgba(0, 0, 0, .7);
       transform-style: inherit;
   }
   
-  .cimg {
+  /* .cimg {
     position: absolute;
     top: 50%;
     left: 35%;
@@ -483,18 +523,9 @@ p {
   
   .cimg:last-of-type {
     transform: translateZ(.4px) scale(.6) translateX(-104%) translateY(-40%) rotate(-5deg);
-  }
+  } */
   
-  .slide:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    box-shadow: 0 0 8px 1px rgba(0, 0, 0, .7);
-  }
-  
+
   .ctitle {
     width: 50%;
     padding: 5%;
@@ -502,17 +533,7 @@ p {
     background: rgba(240,230,220, .7);
     /* box-shadow: 0 0 8px rgba(0, 0, 0, .7); */
   }
-  
-  .slide:nth-child(2n) .ctitle {
-    margin-left: 0;
-    margin-right: auto;
-  }
-  
-  .slide:nth-child(2n+1) .ctitle {
-    margin-left: auto;
-    margin-right: 0;
-  }
-  
+
   .slide, .slide:before {
     background: 50% 50% / cover;  
   }
@@ -528,30 +549,13 @@ p {
     background-image: url("dndwarrior.png");
     z-index:2;
   }
-  
-  #ctitle h1 {
-   transform: translateZ(.25px) scale(.75);
-   transform-origin: 50% 100%;
-  
-  }
-  
-  #slide1:before {
-    background:rgba(34, 34, 34, 0.937);
-    transform: translateZ(-1px) scale(2);
-    
-  }
-  
-  #slide2 {
-    background-image: url("https://picsum.photos/960/400");
+
+  #slide2{
+    background:rgb(244, 244, 244);
     z-index:2;
-   
-  }
-  
-  #slide3:before {
-    background-image: url("https://picsum.photos/980/600");
-    transform: translateZ(-1px) scale(2);
-  }
-  
-  #slide4 {
-    background: #222;
+    /* padding: 1px; */
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    position: relative;
   }
