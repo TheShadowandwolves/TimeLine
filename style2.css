@@ -371,16 +371,18 @@ a{
   margin-right: 3vmin;
   margin-top: 0.2vmin;
   margin-left: 0.5vmin;
-
+  width: 2vmin;
 }
 
 .repo-status{
   font-size: 1.5vmin;
   color: rgba(244, 244, 244, 0.499);
-  padding: 0;
+  padding: 2px;
   margin: 0.5vmin;
   border: rgba(255, 255, 255, 0.511) solid 1px;
   border-radius: 8px;
+  width: fit-content;
+  height: fit-content;
   justify-content: center;
   align-items: center;
   display: flex;
@@ -454,18 +456,19 @@ a{
 .top-link-header{
   display:flex;
   flex-direction: column;
-  width: 70%;
-  height: 40vh;
+  width: 90%;
+  height: fit-content;
   margin: 0 auto;
   border: 1px solid #333;
  margin-top: 2vh; 
  border-radius: 8px;
+ box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.5);
 }
 
 
 .main-img-link-header{
   width: 100%;
-  height: 20vh;
+  height: 20vmin;
   background-image: url("1635183210641.jfif");
   background-size:cover;
   background-repeat: no-repeat;
@@ -473,17 +476,103 @@ a{
   border: 1px solid #333;
   border-radius: 8px 8px 0 0;
   margin-left: -1px;
+  
 }
 
 .split-link-header{
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 100%;
-  height: 20vh;
-  margin: 2vmin 2px;
+  height: auto;
+  margin: 0 2px;
+  margin-top: 2vmin;
+  
 }
 
+.title-link-header{
+  margin: 0 2vmin;
+  font-size: 6vmin;
+  color: rgb(0, 0, 0);
+  font-weight: 700;
+  height: fit-content;
+}
+
+.place-link-header{
+  /* margin-left: 40vw; */
+  margin: 0 2vmin;
+  margin-top: 1vmin;
+  font-size: 3vmin;
+  color: rgb(0, 0, 0);
+  font-weight: 700;
+  height: fit-content;
+}
+
+.MLev-img{
+  width: 5vmin;
+  height: 3vmin;
+  background-image: url("MLev.jfif");
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  /* margin-left: -1px; */
+  float: left;
+  margin-right: 2px;
+}
+
+.sub-link-header{
+  
+  margin: 0 2vmin;
+  margin-bottom: 2vh;
+  font-size: 3vmin;
+  color: rgb(0, 0, 0);
+  font-weight: 600;
+}
+
+.talks-about{
+  margin: 0 2vmin;
+  margin-bottom: 2vh;
+  font-size: 3vmin;
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+}
+
+.link-div{
+  margin: 0 2vmin;
+  margin-bottom: 2vh;
+  background-color: #007ea1;
+  border-radius: 8px;
+  height: fit-content;
+  width: fit-content;
+  padding: 0 1vmin;
+  border: 1px solid #333;
+}
+
+.link-link{
+  text-decoration: none;
+  color: white;
+  font-size: 2vmin;
+  font-weight: 600;
+}
+
+.about-title-link{
+  margin: 2vmin;
+  width: 60%;
+  justify-content: center;
+  align-items: center;
+  /* text-align: center; */
+}
+
+.text-about-link{
+  margin: 0 2vmin;
+  margin-top: 2vh;
+  font-size: 3vmin;
+  color: rgb(0, 0, 0);
+  font-weight: 600;
+  width: 90%;
+  margin-bottom: 2vh;
+}
 
 
 
