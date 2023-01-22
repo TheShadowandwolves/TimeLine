@@ -9,8 +9,7 @@ body{
     /* background: linear-gradient(90deg, #4dc9e6 ,#210cae); */
     margin:0;
     padding:0;
-    perspective: 1px;
-    transform-style: preserve-3d;
+    /* background: white; */
     height: 100%;
     overflow-y: scroll;
     overflow-x: hidden;
@@ -39,7 +38,7 @@ body{
     -webkit-background-clip: text;
     color : transparent;
     border-radius: 8px;
-    mix-blend-mode:lighten;
+    /* mix-blend-mode: ; */
     position: relative;
     padding-top: 20vh;
     width: 90%;
@@ -173,6 +172,7 @@ a{
 }
 
 .gity-page{
+  perspective: 1px;
     background-color: #333;
     margin: 0;
 }
@@ -588,7 +588,7 @@ p {
   }
   
   .slide {
-    position: relative;
+    /* position: relative; */
     /* padding: 25vh 10%; */
     min-height: 100vh;
     height: 100%;
@@ -642,7 +642,7 @@ p {
 
   #slide2{
     background: linear-gradient( to right,rgb(185, 249, 255) , rgb(255, 255, 255) 20%,  rgb(255, 255, 255) 80%, rgb(185, 249, 255) );
-    z-index:2;
+    /* z-index:1; */
     /* padding: 1px; */
     height: auto;
     display: flex;
@@ -714,17 +714,28 @@ p {
     margin-right: 2px;
   }
 
-
-
-
-  .Return-to-top-link{
-    display: block;
+  .footer{
     position: fixed;
     bottom: 0;
+    right: 2vw;
+  }
+  /* .Return-to-top{
+    position:sticky;
+    position: -webkit-sticky;
+    bottom: 0;
     right: 0;
-    margin: 1vmin;
-    width: 5vmin;
-    height: 5vmin;
+    margin-right: 2vmin;
+    margin-bottom: 2vmin;
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.201);
+    border-radius: 50%;
+  } */
+
+  .Return-to-top-link{
+   
+    margin: auto;
+    width: 7vmin;
+    height: 7vmin;
     background-image: url("arrow_top_icon_224519.png");
     background-size:cover;
     background-repeat: no-repeat;
@@ -732,8 +743,8 @@ p {
     border-radius: 50%;
     /* margin-left: -1px; */
     float: left;
-    margin-right: 2px;
-    z-index: 2;
+    /* margin-right: 2px; */
+    /* z-index: 2; */
   }
 
   .Skill-Progress-bar{
