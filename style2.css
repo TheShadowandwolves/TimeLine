@@ -458,11 +458,12 @@ a{
   flex-direction: column;
   width: 90%;
   height: fit-content;
-  margin: 0 auto;
+  margin: 2vh auto;
   border: 1px solid #333;
- margin-top: 2vh; 
+ /* margin-top: 2vh;  */
  border-radius: 8px;
  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.5);
+ background-color: white;
 }
 
 
@@ -640,11 +641,117 @@ p {
   }
 
   #slide2{
-    background:rgb(244, 244, 244);
+    background: linear-gradient( to right,rgb(185, 249, 255) , rgb(255, 255, 255) 20%,  rgb(255, 255, 255) 80%, rgb(185, 249, 255) );
     z-index:2;
     /* padding: 1px; */
-    /* height: 100vh; */
+    height: auto;
     display: flex;
     flex-direction: column;
     position: relative;
+  }
+
+  /*Linkedin Job section*/
+
+  .Job-Content{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    /* border: 1px solid #333; */
+    margin: 1vmin;
+    padding: 1vmin;	
+  }
+
+  .Job-Company{
+    font-size: 3.5vmin;
+    font-weight: 600;
+  }
+
+  .Job-Title{
+    font-size: 3vmin;
+    font-weight: 600;
+  }
+
+  .Job-Type{
+    font-size: 2.5vmin;
+    font-weight: 500;
+    /* color: rgba(0, 0, 0, 0.211); */
+  }
+
+  .Job-SubTime, .Job-location{
+    font-size: 2.5vmin;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.75);
+
+  }
+
+  .Job-Time{
+    font-size: 2.5vmin;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.75);
+    margin-left: 1vmin;
+  }
+
+  .split-link-job{
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+  .Job-Img{
+    width: 5vmin;
+    height: 3vmin;
+    
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    /* margin-left: -1px; */
+    float: left;
+    margin-right: 2px;
+  }
+
+
+
+
+  .Return-to-top-link{
+    display: block;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 1vmin;
+    width: 5vmin;
+    height: 5vmin;
+    background-image: url("arrow_top_icon_224519.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    /* margin-left: -1px; */
+    float: left;
+    margin-right: 2px;
+    z-index: 2;
+  }
+
+  .Skill-Progress-bar{
+    background-color: #007ea1;
+    border-radius: 8px;
+    height: 2vmin;
+
+  }
+
+  .Skill-il{
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    
+  }
+  .Skill-Progress{
+    border: 1px solid rgb(0, 120, 190); 
+    border-radius: 8px;
+    margin-right: 4vw;
   }
