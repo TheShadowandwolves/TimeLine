@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Babylonica&family=Roboto:wght@800&display=swap');
 
-
+/*main html body ##############################################################*/
 html {
   height: 100%;
   overflow: hidden;
@@ -21,159 +21,152 @@ body{
     /* max-height: 100vh; */
 }
 
-.title{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-weight: bolder;
-    /* font-size: 2.5rem; */
-    
-    cursor: pointer;
-    /* margin-top: 10%; */
-}
 
-.t{
-    margin: 0 2px;
-    font-size: 7vw;
-    background-image: url("fire.gif");
-    background-size: cover;
-    background-clip: text;
-    -webkit-background-clip: text;
-    color : transparent;
-    border-radius: 8px;
-    /* mix-blend-mode: ; */
-    position: relative;
-    padding-top: 20vh;
-    width: 90%;
-    text-align: center;
-}
+/*a ############################################################################*/
 
-.title:hover .t1,
-.title:hover .t3,
-.title:hover .t5,
-.title:hover .t7,
-.title:hover .t9,
-.title:hover .t11,
-.title:hover .t13,
-.title:hover .t15,
-.title:hover .t17
-{
-    transform: skew(10deg, 10deg);
-    translate: -0.5rem 2rem;
-    transition: 0.5s;
-}
-
-.title:hover .t2,
-.title:hover .t4,
-.title:hover .t6,
-.title:hover .t8,
-.title:hover .t10,
-.title:hover .t12,
-.title:hover .t14,
-.title:hover .t16,
-.title:hover .t18
-
-{
-    transform: skew(-10deg, -10deg);
-    translate: 0.5rem -2rem;
-    transition: 0.5s;
-}
-
-.link{
-    /* position: relative;
-    justify-content: center;
-    align-items: center;
-    text-align: center; */
-    font-weight: bolder;
-    float: left;
-    width: 50px;
-    height: 50px;
-    font-size: 2.5rem;
-    
-    cursor: pointer;
-    margin: 20px;
-    
-    /* background: url(button.png);
-    background-size: cover; */
-
-    border: 2px solid none;
-    border-radius: 20px;
-}
-
-.home-link{
-    background-color: rgba(255, 255, 255, 0.629);
-    margin-top: 30px;   
-}
-.home-link:hover{
-    color: rgba(255, 255, 255, 0.629);
-}
-.linkedIn-link{
-    margin-top: 30px;
-    background-color: aqua;
-}
-.linkedIn-link:hover{
-    color: aqua;
-}
-.link:hover{
-    background-color: transparent;
-    /* color: aliceblue; */
-    border: 5px solid;
-    transition: 0.5s;
-   
+.about-title-link{
+  margin: 2vmin;
+  width: 60%;
+  justify-content: center;
+  align-items: center;
+  /* text-align: center; */
 }
 
 a{
-    text-decoration: none;
+  text-decoration: none;
 }
 
-#h-link{
-    color: black;
-}
-
-#img-con{
-    height: 25px;
-    width: 25px;
-    margin: auto;
-    border-radius: 50%;
+.a-menu{
+  color: white;
+  text-decoration: none;
+  margin-right: 2vw;
+  font-weight: 500;
+  font-size: 2vmin;
 
 }
-/*button*/
 
-.sub{
-    /* padding: 0 25vw; */
-    background: rgba(51, 51, 51, 0.14);
-    width: fit-content;
-    margin: auto;
-    margin-left: 3vw;
-    margin-right: 3vw;
+.a-menu:hover{
+  color: rgb(0, 120, 190);
+  text-shadow: 0 2px 2px rgb(0, 0, 0);
+  scale: 1.2;
 }
 
-.sub-title{
-    /* display: flex; */
-    /* text-indent: 50px; */
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-weight: bolder;
-    font-size: 3vmin;
-    cursor: pointer;
-    /* padding: 0 30px; */
-    margin: 0;
-    margin-top: 20vh;
-    /* margin-top: 10%; */
+/*b ############################################################################*/
+.btn-gity{
+  width: 15vw;
+  height: 3vh;
+  background-color: rgba(98, 98, 98, 0.675);
+  border: 1px solid rgb(171, 171, 171);
+  border-radius: 8px;
+  margin: 0;
+  margin-left: 11vw;
+  color: white;
+  font-size: 2vmin;
+  font-weight: bold;
+  letter-spacing: 2px;
+  cursor: pointer;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  display: flex;
 }
 
-.oneline{
-    display: flex;
-    background-color: #007ea1;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    margin: 0;
+/*c ############################################################################*/
+.content{
+  position: absolute;
+  margin-left: 20px;
+  margin-top: 17vh;
+  max-width: 60vw;
+  height: auto;
+  border-radius: 8px;
+  border: 2px solid rgb(171, 171, 171);
+  /* background-color: rgba(98, 98, 98, 0.675); */
 }
+/* .cimg {
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  width: 320px;
+  height: 240px;
+  transform: translateZ(.25px) scale(.75) translateX(-94%) translateY(-100%) rotate(2deg);
+  padding: 10px;
+  border-radius: 5px;
+  background: rgba(240,230,220, .7);
+  box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+}
+
+.cimg:last-of-type {
+  transform: translateZ(.4px) scale(.6) translateX(-104%) translateY(-40%) rotate(-5deg);
+} */
+
+.ctitle {
+  width: 50%;
+  padding: 5%;
+  border-radius: 5px;
+  background: rgba(240,230,220, .7);
+  /* box-shadow: 0 0 8px rgba(0, 0, 0, .7); */
+}
+
+#clblue:before{
+  color: blue; /* Change the color */
+}
+#clred:before{
+  color: red; /* Change the color */
+}
+#clorange:before{
+  color: rgb(255, 115, 0); /* Change the color */
+}
+
+#clgrey::before{
+  color: grey;
+}
+
+#cllightblue::before{
+  color: rgb(0, 145, 255);
+}
+
+#clpink::before{
+  color: rgb(255, 0, 115);
+}
+#ctitle {
+  background-image: url("dndwarrior.png");
+  z-index:2;
+}
+
+/*d ############################################################################*/
+#div2{
+  border: none;
+}
+/*e ############################################################################*/
+
+/*f ############################################################################*/
+
+.footer{
+  position: fixed;
+  bottom: 0;
+  right: 2vw;
+  transition: all ease 0.5s;
+  
+}
+/* .Return-to-top{
+  position:sticky;
+  position: -webkit-sticky;
+  bottom: 0;
+  right: 0;
+  margin-right: 2vmin;
+  margin-bottom: 2vmin;
+  z-index: 2;
+  background-color: rgba(255, 255, 255, 0.201);
+  border-radius: 50%;
+} */
+.footer:hover{
+  background-color: rgba(255, 255, 255, 0.201);
+  border-radius: 50%;
+  scale: 1.2;
+  
+}
+
+/*g ############################################################################*/
 
 .gity-page{
   perspective:1px;
@@ -181,180 +174,303 @@ a{
   margin: 0;
 }
 
-.side-gity{
-    display: flex;
-    /* flex:1 ; */
-    height: 100vh;
-    
+/*h ############################################################################*/
+.header {
+  text-align: center;
+  font-size: 175%;
+  color: #fff;
+  /* text-shadow: 0 2px 2px #000; */
+}
+#h-link{
+  color: black;
+}
+
+.home-link{
+  background-color: rgba(255, 255, 255, 0.629);
+  margin-top: 30px;   
+}
+.home-link:hover{
+  color: rgba(255, 255, 255, 0.629);
+}
+/*i ############################################################################*/
+
+.img-gity{
+  max-width: 20vmin;
+  max-height: 20vmin;
+  border-radius: 50%;
+  margin: 10vh 10vw 0;
+  background-size: contain;
+  z-index: 1;
+}
+
+#img-con{
+  height: 25px;
+  width: 25px;
+  margin: auto;
+  border-radius: 50%;
+
+}
+/*button*/
+/*j ############################################################################*/
+
+.Job-Content{
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: auto;
+  /* border: 1px solid #333; */
+  margin: 1vmin;
+  padding: 1vmin;	
+}
+
+.Job-Company{
+  font-size: 3.5vmin;
+  font-weight: 600;
+}
+
+.Job-Title{
+  font-size: 3vmin;
+  font-weight: 600;
+}
+
+.Job-Type{
+  font-size: 2.5vmin;
+  font-weight: 500;
+  /* color: rgba(0, 0, 0, 0.211); */
+}
+
+.Job-SubTime, .Job-location{
+  font-size: 2.5vmin;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.75);
+
+}
+
+.Job-Time{
+  font-size: 2.5vmin;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.75);
+  margin-left: 1vmin;
+}
+
+.Job-Img{
+  width: 5vmin;
+  height: 3vmin;
+  
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  /* margin-left: -1px; */
+  float: left;
+  margin-right: 2px;
+}
+
+/*k ############################################################################*/
+
+/*l ############################################################################*/
+.line-gity{
+  width: 100%;
+  height: 1px;
+  background-color: rgba(171, 171, 171, 0.173);
+  margin: 0;
+  z-index: 0;
+  margin-top: 14vh;
+  position: absolute;
+}
+.link-div{
+  margin: 0 2vmin;
+  margin-bottom: 2vh;
+  background-color: #007ea1;
+  border-radius: 8px;
+  height: fit-content;
+  width: fit-content;
+  padding: 0 1vmin;
+  border: 1px solid #333;
+}
+
+.link-link{
+  text-decoration: none;
+  color: white;
+  font-size: 2vmin;
+  font-weight: 600;
 }
 
 .left-side-gity{
-    display: flex;
-    flex-direction: column;
-    /* flex: 1; */
-    width: 100%;
-    margin: 0;
-    /* margin-right: 20px; */
-}
-
-.right-side-gity{
-    display: flex;
+  display: flex;
+  flex-direction: column;
   /* flex: 1; */
-    width: 200vw;
-    height: auto;
-    margin: 0;
+  width: 100%;
+  margin: 0;
+  /* margin-right: 20px; */
 }
 
-.img-gity{
-    max-width: 20vmin;
-    max-height: 20vmin;
-    border-radius: 50%;
-    margin: 10vh 10vw 0;
-    background-size: contain;
-    z-index: 1;
+.link{
+  /* position: relative;
+  justify-content: center;
+  align-items: center;
+  text-align: center; */
+  font-weight: bolder;
+  float: left;
+  width: 50px;
+  height: 50px;
+  font-size: 2.5rem;
+  
+  cursor: pointer;
+  margin: 20px;
+  
+  /* background: url(button.png);
+  background-size: cover; */
+
+  border: 2px solid none;
+  border-radius: 20px;
+}
+.linkedIn-link{
+  margin-top: 30px;
+  background-color: aqua;
+}
+.linkedIn-link:hover{
+  color: aqua;
+}
+.link:hover{
+  background-color: transparent;
+  /* color: aliceblue; */
+  border: 5px solid;
+  transition: 0.5s;
+ 
 }
 
-.title-gity{
-    padding-left: 11vw;
-    font-size: 2vw;
-    color: white;
-    margin: 0;
-    margin-top: 10px;
-    /* width: 9vw; */
+.lang-stat::before{
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 2vw; /* Also needed for space (tweak if needed) */
+  margin-left: 0.5vw; /* Also needed for space (tweak if needed) */
+  font-size: 2.5vw;
+  /* margin: -3px; */
+  margin-bottom: 0;
+  vertical-align:middle;
 }
 
-.subtitle-gity{
-    padding-left: 11vw;
-    font-size: 1.5vw;
-    color: rgb(147, 147, 147);
-    margin: 0;
-    margin-top: 5px;
-    margin-bottom: 10px;
-}
+/*m ############################################################################*/
 
-.text-gity{
-    padding-left: 11vw;
-    font-size: 1.5vmin;
-    color: white;
-    margin: 0;
-    width: 16vw;
-    letter-spacing: 2px;
+#menu-top{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(51, 51, 51, 0.507);
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px;
+  z-index: 1;
 }
-
-.btn-gity{
-    width: 15vw;
-    height: 3vh;
-    background-color: rgba(98, 98, 98, 0.675);
-    border: 1px solid rgb(171, 171, 171);
-    border-radius: 8px;
-    margin: 0;
-    margin-left: 11vw;
-    color: white;
-    font-size: 2vmin;
-    font-weight: bold;
-    letter-spacing: 2px;
-    cursor: pointer;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    display: flex;
+.MLev-img{
+  width: 5vmin;
+  height: 3vmin;
+  background-image: url("MLev.jfif");
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  /* margin-left: -1px; */
+  float: left;
+  margin-right: 2px;
 }
-
-.line-gity{
-    width: 100%;
-    height: 1px;
-    background-color: rgba(171, 171, 171, 0.173);
-    margin: 0;
-    z-index: 0;
-    margin-top: 14vh;
-    position: absolute;
-}
-
-.top-menu-gity{
-    position: absolute;
-    display: flex;
-    flex-direction: row;
-    white-space: nowrap;
-    width: 100%;
-    height: 50px;
-    /* justify-content: center; */
-    align-items: center;
-    text-align: center;
-    color: white;
-    letter-spacing: 2px;
-    font-size: 1.5vw;
-    margin-top: 9vh;
-    margin-left: 37vw;
-    cursor: pointer;
-}
-
-#overview{
-    margin-right: 50px;
-}
-
-.content{
-    position: absolute;
-    margin-left: 20px;
-    margin-top: 17vh;
-    max-width: 60vw;
-    height: auto;
-    border-radius: 8px;
-    border: 2px solid rgb(171, 171, 171);
-    /* background-color: rgba(98, 98, 98, 0.675); */
-}
-
 .menu-pic{
-    width: 100%;
-    height: 7vmin;
-    margin: 0;
-    background-image: url("github-menu.png");
-    background-size:cover;
-    background-repeat: no-repeat;
+  width: 100%;
+  height: 7vmin;
+  margin: 0;
+  background-image: url("github-menu.png");
+  background-size:cover;
+  background-repeat: no-repeat;
 }
 
+#message{
+  width: 100%;
+  height: auto;
+  background-color: red;
+  font-size: 2vh;
+  color: white;
+  padding: 5px;
+  z-index: 1;
+  position: relative;
+  top: 0;
+  left: 0;
+  align-items: center;
+  justify-content: end;
+}
+
+.main-img-link-header{
+  width: 100%;
+  height: 20vmin;
+  background-image: url("1635183210641.jfif");
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 1px solid #333;
+  border-radius: 8px 8px 0 0;
+  margin-left: -1px;
+  
+}
+
+/*n ############################################################################*/
+
+/*o ############################################################################*/
 #overview{
-    list-style-image: url("Science-Literature-icon.png");
+  margin-right: 50px;
+  list-style-image: url("Science-Literature-icon.png");
 }
 
-.text-overview{
-    color: white;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.2vw;
-    word-spacing: 2px;
-    line-height: 20px;
-    padding: 8px;
+.oneline{
+  display: flex;
+  background-color: #007ea1;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 0;
+}
+/*p ############################################################################*/
+p {
+  font-size: 140%;
+  line-height: 150%;
+  color: #333;
+}
+.pic-l{
+  width: 20vmin;
+  height: 20vmin;
+  background-image: url("LB.png");
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  margin-right: 2vw;
+  box-shadow: 0 0 1vmin rgb(0, 0, 0);
 }
 
+/*q ############################################################################*/
+
+/*r ############################################################################*/
 #repository{
-    list-style-image: url("Book-icon.png");
-}
-
-.tg{
-    margin: 2px 0;
-}
-
-.tm{
-    font-size: smaller;
+  list-style-image: url("Book-icon.png");
 }
 
 .repos{
-  display: flex;
-  flex-flow: row wrap;
-  justify-content:left;
-  width: 50vw;
-  /* grid-template-columns: auto auto; */
-  gap: 2vmin;
-  /* align-items: start; */
-  /* justify-content: space-evenly; */
-  padding: 0.9vmin;
-  /* min-width: 40vmin;
-  height: 20vmin; */
+display: flex;
+flex-flow: row wrap;
+justify-content:left;
+width: 50vw;
+/* grid-template-columns: auto auto; */
+gap: 2vmin;
+/* align-items: start; */
+/* justify-content: space-evenly; */
+padding: 0.9vmin;
+/* min-width: 40vmin;
+height: 20vmin; */
 }
-#div2{
-  border: none;
-}
-
-
 .repo{
   /* grid-row: inherit;
   grid-column: inherit; */
@@ -366,6 +482,16 @@ a{
   margin: 0 0.5vw;
   grid-template-columns: 1fr 7vw;
   /* gap: 1vmin; */
+}
+
+.place-link-header{
+  /* margin-left: 40vw; */
+  margin: 0 2vmin;
+  margin-top: 1vmin;
+  font-size: 3vmin;
+  color: rgb(0, 0, 0);
+  font-weight: 700;
+  height: fit-content;
 }
 
 .repo-link{
@@ -406,55 +532,312 @@ a{
   /* list-style-type: circle; */
   /* list-style: repeating-linear-gradient(45deg, #fff, #fff 10px, #000 10px, #000 20px); */
 }
- 
-.lang-stat::before{
-  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
-  
-  font-weight: bold; /* If you want it to be bold */
-  display: inline-block; /* Needed to add space between the bullet and the text */
-  width: 2vw; /* Also needed for space (tweak if needed) */
-  margin-left: 0.5vw; /* Also needed for space (tweak if needed) */
-  font-size: 2.5vw;
-  /* margin: -3px; */
-  margin-bottom: 0;
-  vertical-align:middle;
+
+.right-side-gity{
+  display: flex;
+/* flex: 1; */
+  width: 200vw;
+  height: auto;
+  margin: 0;
+}
+.Return-to-top-link{
+  margin: auto;
+  width: 7vmin;
+  height: 7vmin;
+  background-image: url("arrow_top_icon_224519.png");
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  /* margin-left: -1px; */
+  float: left;
+  /* margin-right: 2px; */
+  /* z-index: 2; */
+}
+/*s ############################################################################*/
+.split-link-job{
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  height: auto;
+  margin: 0;
+  padding: 0;
 }
 
-#clblue:before{
-  color: blue; /* Change the color */
-}
-#clred:before{
-  color: red; /* Change the color */
-}
-#clorange:before{
-  color: rgb(255, 115, 0); /* Change the color */
+.Skill-Progress-bar{
+  background-color: #007ea1;
+  border-radius: 8px;
+  height: 2vmin;
+
 }
 
-#clgrey::before{
-  color: grey;
-}
-
-#cllightblue::before{
-  color: rgb(0, 145, 255);
-}
-
-#clpink::before{
-  color: rgb(255, 0, 115);
-}
-
-#message{
+.split-link-header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   width: 100%;
   height: auto;
-  background-color: red;
-  font-size: 2vh;
-  color: white;
-  padding: 5px;
-  z-index: 1;
+  margin: 0 2px;
+  margin-top: 2vmin;
+  
+}
+
+.Skill-il{
+  width: auto;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  
+}
+
+.Skill-Progress{
+  border: 1px solid rgb(0, 120, 190); 
+  border-radius: 8px;
+  margin-right: 4vw;
+}
+
+.sub-title-l{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 2vmin;
+  margin: 0 20vw;
+  text-align:justify;
+  text-shadow: 1px 1px 5vmin rgb(32, 0, 193);
+  background-color: rgba(0, 0, 0, 0.068);
+  color: rgb(253, 254, 255);
+}
+
+.sub{
+  /* padding: 0 25vw; */
+  background: rgba(51, 51, 51, 0.14);
+  width: fit-content;
+  margin: auto;
+  margin-left: 3vw;
+  margin-right: 3vw;
+}
+
+.sub-title{
+  /* display: flex; */
+  /* text-indent: 50px; */
   position: relative;
-  top: 0;
-  left: 0;
+  justify-content: center;
   align-items: center;
-  justify-content: end;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 3vmin;
+  cursor: pointer;
+  /* padding: 0 30px; */
+  margin: 0;
+  margin-top: 20vh;
+  /* margin-top: 10%; */
+}
+
+.side-gity{
+  display: flex;
+  /* flex:1 ; */
+  height: 100vh;
+  
+}
+
+#slide2{
+  background: linear-gradient( to right,rgb(185, 249, 255) , rgb(255, 255, 255) 20%,  rgb(255, 255, 255) 80%, rgb(185, 249, 255) );
+  /* z-index:1; */
+  /* padding: 1px; */
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  perspective: none;
+}
+
+.subtitle-gity{
+  padding-left: 11vw;
+  font-size: 1.5vw;
+  color: rgb(147, 147, 147);
+  margin: 0;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.sub-link-header{
+  
+  margin: 0 2vmin;
+  margin-bottom: 2vh;
+  font-size: 3vmin;
+  color: rgb(0, 0, 0);
+  font-weight: 600;
+}
+
+.slide {
+  /* position: relative; */
+  /* padding: 25vh 10%; */
+  /* perspective: none; */
+  min-height: 100vh;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  box-shadow: 0 -1px 10px rgba(0, 0, 0, .7);
+    transform-style: inherit;
+}
+
+.slide, .slide:before {
+  background: 50% 50% / cover;  
+  
+}
+  
+/*t ############################################################################*/
+.title-link-header{
+  margin: 0 2vmin;
+  font-size: 6vmin;
+  color: rgb(0, 0, 0);
+  font-weight: 700;
+  height: fit-content;
+}
+
+.talks-about{
+  margin: 0 2vmin;
+  margin-bottom: 2vh;
+  font-size: 3vmin;
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+}
+
+.text-about-link{
+  margin: 0 2vmin;
+  margin-top: 2vh;
+  font-size: 3vmin;
+  color: rgb(0, 0, 0);
+  font-weight: 600;
+  width: 90%;
+  margin-bottom: 2vh;
+}
+
+.text-name{
+  display: flex;
+  flex-direction: row;
+
+  padding-top: 30vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.text-l{
+  font-size: 15vmin;
+  font-weight: 800;
+  color: rgba(0, 0, 0, 0.85);
+  text-shadow: 0 2px 2px rgb(0, 12, 234);
+  font-family: 'Babylonica', cursive;
+}
+
+.title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-weight: bolder;
+  /* font-size: 2.5rem; */
+  
+  cursor: pointer;
+  /* margin-top: 10%; */
+}
+
+.t{
+  margin: 0 2px;
+  font-size: 7vw;
+  background-image: url("fire.gif");
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color : transparent;
+  border-radius: 8px;
+  /* mix-blend-mode: ; */
+  position: relative;
+  padding-top: 20vh;
+  width: 90%;
+  text-align: center;
+}
+
+.title:hover .t1,
+.title:hover .t3,
+.title:hover .t5,
+.title:hover .t7,
+.title:hover .t9,
+.title:hover .t11,
+.title:hover .t13,
+.title:hover .t15,
+.title:hover .t17
+{
+  transform: skew(10deg, 10deg);
+  translate: -0.5rem 2rem;
+  transition: 0.5s;
+}
+
+.title:hover .t2,
+.title:hover .t4,
+.title:hover .t6,
+.title:hover .t8,
+.title:hover .t10,
+.title:hover .t12,
+.title:hover .t14,
+.title:hover .t16,
+.title:hover .t18
+
+{
+  transform: skew(-10deg, -10deg);
+  translate: 0.5rem -2rem;
+  transition: 0.5s;
+}
+
+.tg{
+  margin: 2px 0;
+}
+
+.tm{
+  font-size: smaller;
+}
+
+.title-gity{
+  padding-left: 11vw;
+  font-size: 2vw;
+  color: white;
+  margin: 0;
+  margin-top: 10px;
+  /* width: 9vw; */
+}
+
+.text-gity{
+  padding-left: 11vw;
+  font-size: 1.5vmin;
+  color: white;
+  margin: 0;
+  width: 16vw;
+  letter-spacing: 2px;
+}
+
+.top-menu-gity{
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  white-space: nowrap;
+  width: 100%;
+  height: 50px;
+  /* justify-content: center; */
+  align-items: center;
+  text-align: center;
+  color: white;
+  letter-spacing: 2px;
+  font-size: 1.5vw;
+  margin-top: 9vh;
+  margin-left: 37vw;
+  cursor: pointer;
+}
+.text-overview{
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2vw;
+  word-spacing: 2px;
+  line-height: 20px;
+  padding: 8px;
 }
 
 .top-link-header{
@@ -471,382 +854,17 @@ a{
  background-color: white;
 }
 
+/*u ############################################################################*/
 
-.main-img-link-header{
-  width: 100%;
-  height: 20vmin;
-  background-image: url("1635183210641.jfif");
-  background-size:cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  border: 1px solid #333;
-  border-radius: 8px 8px 0 0;
-  margin-left: -1px;
-  
-}
+/*v ############################################################################*/
 
-.split-link-header{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 100%;
-  height: auto;
-  margin: 0 2px;
-  margin-top: 2vmin;
-  
-}
+/*w ############################################################################*/
 
-.title-link-header{
-  margin: 0 2vmin;
-  font-size: 6vmin;
-  color: rgb(0, 0, 0);
-  font-weight: 700;
-  height: fit-content;
-}
+/*x ############################################################################*/
 
-.place-link-header{
-  /* margin-left: 40vw; */
-  margin: 0 2vmin;
-  margin-top: 1vmin;
-  font-size: 3vmin;
-  color: rgb(0, 0, 0);
-  font-weight: 700;
-  height: fit-content;
-}
+/*y ############################################################################*/
 
-.MLev-img{
-  width: 5vmin;
-  height: 3vmin;
-  background-image: url("MLev.jfif");
-  background-size:cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 50%;
-  /* margin-left: -1px; */
-  float: left;
-  margin-right: 2px;
-}
-
-.sub-link-header{
-  
-  margin: 0 2vmin;
-  margin-bottom: 2vh;
-  font-size: 3vmin;
-  color: rgb(0, 0, 0);
-  font-weight: 600;
-}
-
-.talks-about{
-  margin: 0 2vmin;
-  margin-bottom: 2vh;
-  font-size: 3vmin;
-  color: rgb(0, 0, 0);
-  font-weight: 500;
-}
-
-.link-div{
-  margin: 0 2vmin;
-  margin-bottom: 2vh;
-  background-color: #007ea1;
-  border-radius: 8px;
-  height: fit-content;
-  width: fit-content;
-  padding: 0 1vmin;
-  border: 1px solid #333;
-}
-
-.link-link{
-  text-decoration: none;
-  color: white;
-  font-size: 2vmin;
-  font-weight: 600;
-}
-
-.about-title-link{
-  margin: 2vmin;
-  width: 60%;
-  justify-content: center;
-  align-items: center;
-  /* text-align: center; */
-}
-
-.text-about-link{
-  margin: 0 2vmin;
-  margin-top: 2vh;
-  font-size: 3vmin;
-  color: rgb(0, 0, 0);
-  font-weight: 600;
-  width: 90%;
-  margin-bottom: 2vh;
-}
+/*z ############################################################################*/
 
 
-
-
-
-/*codepen*/
-
-p {
-    font-size: 140%;
-    line-height: 150%;
-    color: #333;
-  }
-  
-  .slide {
-    /* position: relative; */
-    /* padding: 25vh 10%; */
-    /* perspective: none; */
-    min-height: 100vh;
-    height: 100%;
-    width: 100%;
-    box-sizing: border-box;
-    box-shadow: 0 -1px 10px rgba(0, 0, 0, .7);
-      transform-style: inherit;
-  }
-  
-  /* .cimg {
-    position: absolute;
-    top: 50%;
-    left: 35%;
-    width: 320px;
-    height: 240px;
-    transform: translateZ(.25px) scale(.75) translateX(-94%) translateY(-100%) rotate(2deg);
-    padding: 10px;
-    border-radius: 5px;
-    background: rgba(240,230,220, .7);
-    box-shadow: 0 0 8px rgba(0, 0, 0, .7);
-  }
-  
-  .cimg:last-of-type {
-    transform: translateZ(.4px) scale(.6) translateX(-104%) translateY(-40%) rotate(-5deg);
-  } */
-  
-
-  .ctitle {
-    width: 50%;
-    padding: 5%;
-    border-radius: 5px;
-    background: rgba(240,230,220, .7);
-    /* box-shadow: 0 0 8px rgba(0, 0, 0, .7); */
-  }
-
-  .slide, .slide:before {
-    background: 50% 50% / cover;  
-    
-  }
-  
-  .header {
-    text-align: center;
-    font-size: 175%;
-    color: #fff;
-    /* text-shadow: 0 2px 2px #000; */
-  }
-  
-  #ctitle {
-    background-image: url("dndwarrior.png");
-    z-index:2;
-  }
-
-  #slide2{
-    background: linear-gradient( to right,rgb(185, 249, 255) , rgb(255, 255, 255) 20%,  rgb(255, 255, 255) 80%, rgb(185, 249, 255) );
-    /* z-index:1; */
-    /* padding: 1px; */
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    perspective: none;
-  }
-
-  /*Linkedin Job section*/
-
-  .Job-Content{
-    display: flex;
-    flex-direction: column;
-    width: auto;
-    height: auto;
-    /* border: 1px solid #333; */
-    margin: 1vmin;
-    padding: 1vmin;	
-  }
-
-  .Job-Company{
-    font-size: 3.5vmin;
-    font-weight: 600;
-  }
-
-  .Job-Title{
-    font-size: 3vmin;
-    font-weight: 600;
-  }
-
-  .Job-Type{
-    font-size: 2.5vmin;
-    font-weight: 500;
-    /* color: rgba(0, 0, 0, 0.211); */
-  }
-
-  .Job-SubTime, .Job-location{
-    font-size: 2.5vmin;
-    font-weight: 500;
-    color: rgba(0, 0, 0, 0.75);
-
-  }
-
-  .Job-Time{
-    font-size: 2.5vmin;
-    font-weight: 500;
-    color: rgba(0, 0, 0, 0.75);
-    margin-left: 1vmin;
-  }
-
-  .split-link-job{
-    display: flex;
-    flex-direction: row;
-    width: auto;
-    height: auto;
-    margin: 0;
-    padding: 0;
-  }
-
-  .Job-Img{
-    width: 5vmin;
-    height: 3vmin;
-    
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 50%;
-    /* margin-left: -1px; */
-    float: left;
-    margin-right: 2px;
-  }
-
-  .footer{
-    position: fixed;
-    bottom: 0;
-    right: 2vw;
-    transition: all ease 0.5s;
-    
-  }
-  /* .Return-to-top{
-    position:sticky;
-    position: -webkit-sticky;
-    bottom: 0;
-    right: 0;
-    margin-right: 2vmin;
-    margin-bottom: 2vmin;
-    z-index: 2;
-    background-color: rgba(255, 255, 255, 0.201);
-    border-radius: 50%;
-  } */
-  .footer:hover{
-    background-color: rgba(255, 255, 255, 0.201);
-    border-radius: 50%;
-    scale: 1.2;
-    
-  }
-
-  .Return-to-top-link{
-    margin: auto;
-    width: 7vmin;
-    height: 7vmin;
-    background-image: url("arrow_top_icon_224519.png");
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 50%;
-    /* margin-left: -1px; */
-    float: left;
-    /* margin-right: 2px; */
-    /* z-index: 2; */
-  }
-
-  .Skill-Progress-bar{
-    background-color: #007ea1;
-    border-radius: 8px;
-    height: 2vmin;
-
-  }
-
-  .Skill-il{
-    width: auto;
-    height: auto;
-    margin: 0;
-    padding: 0;
-    
-  }
-  .Skill-Progress{
-    border: 1px solid rgb(0, 120, 190); 
-    border-radius: 8px;
-    margin-right: 4vw;
-  }
-
-  .pic-l{
-    width: 20vmin;
-    height: 20vmin;
-    background-image: url("LB.png");
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 50%;
-    margin-right: 2vw;
-    box-shadow: 0 0 1vmin rgb(0, 0, 0);
-  }
-
-  .text-name{
-    display: flex;
-    flex-direction: row;
-  
-    padding-top: 30vh;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-
-  .text-l{
-    font-size: 15vmin;
-    font-weight: 800;
-    color: rgba(0, 0, 0, 0.85);
-    text-shadow: 0 2px 2px rgb(0, 12, 234);
-    font-family: 'Babylonica', cursive;
-  }
-
-  #menu-top{
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(51, 51, 51, 0.507);
-    color: white;
-    display: flex;
-    justify-content: space-evenly;
-    padding: 10px;
-    z-index: 1;
-  }
-
-
-  .a-menu{
-    color: white;
-    text-decoration: none;
-    margin-right: 2vw;
-    font-weight: 500;
-    font-size: 2vmin;
-
-  }
-
-  .a-menu:hover{
-    color: rgb(0, 120, 190);
-    text-shadow: 0 2px 2px rgb(0, 0, 0);
-    scale: 1.2;
-  }
-
-  .sub-title-l{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 2vmin;
-    margin: 0 20vw;
-    text-align:justify;
-    text-shadow: 1px 1px 5vmin rgb(32, 0, 193);
-    background-color: rgba(0, 0, 0, 0.068);
-    color: rgb(253, 254, 255);
-  }
+/*#####################################################################################################################*/
