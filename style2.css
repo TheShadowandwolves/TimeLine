@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Orbitron');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Babylonica&family=Roboto:wght@800&display=swap');
+
+
 html {
   height: 100%;
   overflow: hidden;
@@ -173,9 +176,9 @@ a{
 }
 
 .gity-page{
-  perspective: 1px;
-    background-color: #333;
-    margin: 0;
+  perspective:1px;
+  background-color: #333;
+  margin: 0;
 }
 
 .side-gity{
@@ -455,6 +458,7 @@ a{
 }
 
 .top-link-header{
+
   display:flex;
   flex-direction: column;
   width: 90%;
@@ -591,6 +595,7 @@ p {
   .slide {
     /* position: relative; */
     /* padding: 25vh 10%; */
+    /* perspective: none; */
     min-height: 100vh;
     height: 100%;
     width: 100%;
@@ -627,6 +632,7 @@ p {
 
   .slide, .slide:before {
     background: 50% 50% / cover;  
+    
   }
   
   .header {
@@ -649,6 +655,7 @@ p {
     display: flex;
     flex-direction: column;
     position: relative;
+    perspective: none;
   }
 
   /*Linkedin Job section*/
@@ -773,4 +780,73 @@ p {
     border: 1px solid rgb(0, 120, 190); 
     border-radius: 8px;
     margin-right: 4vw;
+  }
+
+  .pic-l{
+    width: 20vmin;
+    height: 20vmin;
+    background-image: url("LB.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    margin-right: 2vw;
+    box-shadow: 0 0 1vmin rgb(0, 0, 0);
+  }
+
+  .text-name{
+    display: flex;
+    flex-direction: row;
+  
+    padding-top: 30vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .text-l{
+    font-size: 15vmin;
+    font-weight: 800;
+    color: rgba(0, 0, 0, 0.85);
+    text-shadow: 0 2px 2px rgb(0, 12, 234);
+    font-family: 'Babylonica', cursive;
+  }
+
+  #menu-top{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(51, 51, 51, 0.507);
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    z-index: 1;
+  }
+
+
+  .a-menu{
+    color: white;
+    text-decoration: none;
+    margin-right: 2vw;
+    font-weight: 500;
+    font-size: 2vmin;
+
+  }
+
+  .a-menu:hover{
+    color: rgb(0, 120, 190);
+    text-shadow: 0 2px 2px rgb(0, 0, 0);
+    scale: 1.2;
+  }
+
+  .sub-title-l{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2vmin;
+    margin: 0 20vw;
+    text-align:justify;
+    text-shadow: 1px 1px 5vmin rgb(32, 0, 193);
+    background-color: rgba(0, 0, 0, 0.068);
+    color: rgb(253, 254, 255);
   }
