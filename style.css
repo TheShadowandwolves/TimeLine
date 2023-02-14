@@ -44,7 +44,7 @@
     justify-content: center;
     align-items: center;
     background-color: var(--main-bg-color);
-    background-image: url("clocka.png");
+    background-image: url("img/clocka.png");
     background-position: center center;
     background-size: cover;
     border-radius: 50%;

@@ -51,6 +51,25 @@ a{
   scale: 1.2;
 }
 
+.a-card{
+  color: rgb(4, 0, 0);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 3vmin;
+  width: 7vmin;
+  height: 7vmin;
+  /* background-color: black; */
+  border-radius: 8px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.a-card:hover{
+  color: rgb(0, 120, 190);
+  /* text-shadow: 2px 2px 1vmin rgb(255, 255, 255); */
+  scale: 1.2;
+}
 /*b ############################################################################*/
 .btn-gity{
   width: 15vw;
@@ -71,6 +90,19 @@ a{
   display: flex;
 }
 
+.bottom-side-card{
+  width: 100%;
+  height: auto;
+  margin: auto;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  background-color: rgba(255, 136, 0, 0.696);
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+  border-radius: 8px;
+  
+}
 /*c ############################################################################*/
 .content{
   position: absolute;
@@ -129,10 +161,36 @@ a{
   color: rgb(255, 0, 115);
 }
 #ctitle {
-  background-image: url("dndwarrior.png");
+  background-image: url("img/dndwarrior.png");
   z-index:2;
 }
 
+.card-vist{
+  font-size: 5vmin;
+  color: white;
+  font-weight: bold;
+  text-shadow: 0 2px 2vmin rgb(255, 128, 0);
+  margin: 0;
+}
+
+.card-vist-desc{
+  font-size: 2vmin;
+  color: white;
+  font-weight: bold;
+  text-shadow: 0 1px 1px rgb(255, 128, 0);
+  margin: 1vmin 0;
+}
+
+.card-follow{
+  font-size: 2vmin;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.445);
+  font-weight: bold;
+  text-shadow: 0 0 20px rgb(0, 0, 0);
+  margin: 0;
+  margin-top: 3vh;
+  width: fit-content;
+}
 /*d ############################################################################*/
 #div2{
   border: none;
@@ -210,6 +268,8 @@ a{
   border-radius: 50%;
 
 }
+
+
 /*button*/
 /*j ############################################################################*/
 
@@ -353,6 +413,34 @@ a{
   vertical-align:middle;
 }
 
+.left-side-card{
+  display: flex;
+  flex-direction: column;
+  /* flex: 1; */
+  width: 35%;
+  height: 85%;
+  background-color: rgba(255, 255, 255, 0);
+  margin: 0;
+  margin-right: 1vw;
+  float: left;
+  background-image: url("img/picai.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 5px;
+}
+.left-side-card > .img-card{
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  /* background-color: white; */
+  background-image: url("img/meai.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 5px;
+  scale: 0.8;
+}
 /*m ############################################################################*/
 
 #menu-top{
@@ -370,7 +458,7 @@ a{
 .MLev-img{
   width: 5vmin;
   height: 3vmin;
-  background-image: url("MLev.jfif");
+  background-image: url("img/MLev.jfif");
   background-size:cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -383,7 +471,7 @@ a{
   width: 100%;
   height: 7vmin;
   margin: 0;
-  background-image: url("github-menu.png");
+  background-image: url("img/github-menu.png");
   background-size:cover;
   background-repeat: no-repeat;
 }
@@ -406,7 +494,7 @@ a{
 .main-img-link-header{
   width: 100%;
   height: 20vmin;
-  background-image: url("1635183210641.jfif");
+  background-image: url("img/1635183210641.jfif");
   background-size:cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -421,7 +509,7 @@ a{
 /*o ############################################################################*/
 #overview{
   margin-right: 50px;
-  list-style-image: url("Science-Literature-icon.png");
+  list-style-image: url("img/Science-Literature-icon.png");
 }
 
 .oneline{
@@ -442,7 +530,7 @@ p {
 .pic-l{
   width: 20vmin;
   height: 20vmin;
-  background-image: url("LB.png");
+  background-image: url("img/LB.png");
   background-size:cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -452,10 +540,18 @@ p {
 }
 
 /*q ############################################################################*/
-
+.qr-card{
+  background-size: contain;
+  background-color: rgba(255, 136, 0, 0.696);
+  width: 15vmin;
+  height: 15vmin;
+  border-radius: 8px;
+  margin-left: 70%;
+  margin-top: 8vh;
+}
 /*r ############################################################################*/
 #repository{
-  list-style-image: url("Book-icon.png");
+  list-style-image: url("img/Book-icon.png");
 }
 
 .repos{
@@ -544,7 +640,7 @@ height: 20vmin; */
   margin: auto;
   width: 7vmin;
   height: 7vmin;
-  background-image: url("arrow_top_icon_224519.png");
+  background-image: url("img/arrow_top_icon_224519.png");
   background-size:cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -553,6 +649,22 @@ height: 20vmin; */
   float: left;
   /* margin-right: 2px; */
   /* z-index: 2; */
+}
+
+.right-side-card{
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: auto;
+  height: 85%;
+  margin: 0;
+  padding: 0;
+  /* background-color: #fff; */
+  justify-content: center;
+  align-items: left;
+  text-align: left;
+  padding-left: 2vw;
+
 }
 /*s ############################################################################*/
 .split-link-job{
@@ -683,7 +795,15 @@ height: 20vmin; */
   background: 50% 50% / cover;  
   
 }
-  
+
+#slide3{
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  background-image: url("img/card-background.png");
+  background-size:cover;
+
+}
 /*t ############################################################################*/
 .title-link-header{
   margin: 0 2vmin;
@@ -744,7 +864,7 @@ height: 20vmin; */
 .t{
   margin: 0 2px;
   font-size: 7vw;
-  background-image: url("fire.gif");
+  background-image: url("img/fire.gif");
   background-size: cover;
   background-clip: text;
   -webkit-background-clip: text;
@@ -857,6 +977,21 @@ height: 20vmin; */
 /*u ############################################################################*/
 
 /*v ############################################################################*/
+
+.visitcard{
+  width: 70vw;
+  height: 60vh;
+  margin: auto;
+  padding: 2vmin;
+  /* background-color: #007ea1; */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url("img/visit-background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 
 /*w ############################################################################*/
 
