@@ -36,3 +36,41 @@ function hide(){
   messageElement.style.display = "none";
 }
 
+const switchTheme = (evt) => {
+  const switchBtn = evt.target;
+  if (switchBtn.textContent.toLowerCase() === "light") {
+    switchBtn.textContent = "dark";
+    // localStorage.setItem("theme", "dark");
+    document.documentElement.setAttribute("data-theme", "dark");
+  } else {
+    switchBtn.textContent = "light";
+    // localStorage.setItem("theme", "light"); //add this
+    document.documentElement.setAttribute("data-theme", "light");
+  }
+};
+
+const switchModeBtn = document.querySelector(".switch-btn");
+switchModeBtn.addEventListener("click", switchTheme, false);
+
+let currentTheme = "dark";
+// currentTheme = localStorage.getItem("theme")
+//  ? localStorage.getItem("theme")
+//  : null;
+
+if (currentTheme) {
+  document.documentElement.setAttribute("data-theme", currentTheme);
+  switchModeBtn.textContent = currentTheme;
+}
+
+function sendEmail() {
+  // Get the user-defined text
+  const emailText = document.getElementById("inputed-question").value;
+
+  // Construct the email message
+  const subject = "Question about the website";
+  const body = encodeURIComponent(emailText);
+  const mailtoLink = `mailto:leonard.blam613@gmail.com?subject=${subject}&body=${body}`;
+  // const mailtoLink = `mailto:leonard.blam613@gmail.com`;
+  // Open the email client with the pre-defined message
+  window.open(mailtoLink);
+}
