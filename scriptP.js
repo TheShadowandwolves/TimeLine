@@ -62,15 +62,15 @@ if (currentTheme) {
   switchModeBtn.textContent = currentTheme;
 }
 
-function sendEmail() {
-  // Get the user-defined text
-  const emailText = document.getElementById("inputed-question").value;
+// function sendEmail() {
+//   // Get the user-defined text
+//   const emailText = document.getElementById("inputed-question").value;
 
-  // Construct the email message
-  const subject = "Question about the website";
-  const body = encodeURIComponent(emailText);
-  const mailtoLink = `mailto:leonard.blam613@gmail.com?subject=${subject}&body=${body}`;
-  // const mailtoLink = `mailto:leonard.blam613@gmail.com`;
-  // Open the email client with the pre-defined message
-  window.open(mailtoLink);
-}
+//   // Construct the email message
+//   const subject = "Question about the website";
+//   const body = encodeURIComponent(emailText);
+//   const mailtoLink = `mailto:leonard.blam613@gmail.com?subject=${subject}&body=${body}`;
+//   // const mailtoLink = `mailto:leonard.blam613@gmail.com`;
+//   // Open the email client with the pre-defined message
+//   window.open(mailtoLink);
+// }

@@ -25,6 +25,11 @@ body{
   --main-text-color: rgb(0, 0, 0);
   --main-bg-color2: rgba(85, 85, 85, 0.5);
   --main-bg-card: rgba(49, 49, 49, 0.5);
+  --menu-color: rgb(255, 255, 255);
+  --menu-color-text: rgb(0, 0, 0);
+  --menu-overall-color: rgba(0, 0, 0, 0.742);
+  --menu-overall-text-color: rgb(255, 255, 255);
+  --linkedin-bg-color: linear-gradient( to right,rgb(185, 249, 255) , rgb(255, 255, 255) 20%,  rgb(255, 255, 255) 80%, rgb(185, 249, 255) );
 }
 
 [data-theme="dark"] {
@@ -32,6 +37,13 @@ body{
   --main-text-color: rgb(215, 215, 215);
   --main-bg-color2: rgba(255, 255, 255, 0.5);
   --main-bg-card: rgba(0, 0, 0, 0.742);
+
+  --menu-color: rgb(0, 0, 0);
+  --menu-color-text: rgb(255, 255, 255);
+
+  --menu-overall-color: rgba(255, 255, 255, 0.737);
+  --menu-overall-text-color: rgb(0, 0, 0);
+  --linkedin-bg-color: linear-gradient( to right,rgb(33, 0, 167)  , rgb(0, 0, 0) 20%,  rgb(0, 0, 0) 80%, rgb(33, 0, 167) );
 }
 
 /*a ############################################################################*/
@@ -49,11 +61,11 @@ a{
 }
 
 .a-menu{
-  color: white;
+  color: var(--menu-overall-text-color);
   text-decoration: none;
   margin-right: 2vw;
   font-weight: 500;
-  font-size: 2vmin;
+  font-size: 3vmin;
 
 }
 
@@ -240,7 +252,7 @@ a{
 
 .gity-page{
   perspective:1px;
-  background-color: #333;
+  background-color: var(--main-bg-color);
   margin: 0;
 }
 
@@ -319,7 +331,7 @@ a{
   border: none;
   background-color: var(--main-bg-card);
   color: var(--main-text-color);
-  
+
 }
 /*j ############################################################################*/
 
@@ -336,30 +348,33 @@ a{
 .Job-Company{
   font-size: 3.5vmin;
   font-weight: 600;
+  color: var(--main-text-color);
 }
 
 .Job-Title{
   font-size: 3vmin;
   font-weight: 600;
+  color: var(--main-text-color);
 }
 
 .Job-Type{
   font-size: 2.5vmin;
   font-weight: 500;
+  color: var(--main-text-color);
   /* color: rgba(0, 0, 0, 0.211); */
 }
 
 .Job-SubTime, .Job-location{
   font-size: 2.5vmin;
   font-weight: 500;
-  color: rgba(0, 0, 0, 0.75);
+  color: var(--main-text-color)
 
 }
 
 .Job-Time{
   font-size: 2.5vmin;
   font-weight: 500;
-  color: rgba(0, 0, 0, 0.75);
+  color: var(--main-text-color);
   margin-left: 1vmin;
 }
 
@@ -376,13 +391,17 @@ a{
   margin-right: 2px;
 }
 
+.Job-il{
+  color: var(--main-text-color);
+}
+
 /*k ############################################################################*/
 
 /*l ############################################################################*/
 .line-gity{
   width: 100%;
   height: 1px;
-  background-color: rgba(171, 171, 171, 0.173);
+  background-color: var(--main-bg-color2);
   margin: 0;
   z-index: 0;
   margin-top: 14vh;
@@ -401,7 +420,7 @@ a{
 
 .link-link{
   text-decoration: none;
-  color: white;
+  color: var(--main-text-color);
   font-size: 2vmin;
   font-weight: 600;
 }
@@ -498,8 +517,8 @@ a{
   top: 0;
   left: 0;
   right: 0;
-  background-color: rgba(51, 51, 51, 0.507);
-  color: white;
+  background-color: var(--menu-overall-color);
+  color: var(--menu-overall-text-color);
   display: flex;
   justify-content: space-evenly;
   padding: 10px;
@@ -719,7 +738,7 @@ height: 20vmin; */
 .repo{
   /* grid-row: inherit;
   grid-column: inherit; */
-  border: #fff solid 1px;
+  border: var(--main-text-color) solid 1px;
   padding: 2px;
   border-radius: 5px;
   width: 17vw;
@@ -734,7 +753,7 @@ height: 20vmin; */
   margin: 0 2vmin;
   margin-top: 1vmin;
   font-size: 3vmin;
-  color: rgb(0, 0, 0);
+  color: var(--main-text-color);
   font-weight: 700;
   height: fit-content;
 }
@@ -751,10 +770,10 @@ height: 20vmin; */
 
 .repo-status{
   font-size: 1.5vmin;
-  color: rgba(244, 244, 244, 0.499);
+  color: var(--main-text-color);
   padding: 2px;
   margin: 0.5vmin;
-  border: rgba(255, 255, 255, 0.511) solid 1px;
+  border: var(--main-text-color) solid 1px;
   border-radius: 8px;
   width: fit-content;
   height: fit-content;
@@ -767,7 +786,7 @@ height: 20vmin; */
 
 .repo-lang{
   font-size: 1.5vmin;
-  color: rgb(244, 244, 244);
+  color: var(--main-text-color);
   list-style: none;
   margin-left: 1vmin;
   margin-top: 2vmin;
@@ -842,6 +861,9 @@ height: 20vmin; */
   margin-top: 2vmin;
   
 }
+.Skill-Title{
+  color: var(--main-text-color);
+}
 
 .Skill-il{
   width: auto;
@@ -900,7 +922,7 @@ height: 20vmin; */
 }
 
 #slide2{
-  background: linear-gradient( to right,rgb(185, 249, 255) , rgb(255, 255, 255) 20%,  rgb(255, 255, 255) 80%, rgb(185, 249, 255) );
+  background: var(--linkedin-bg-color);
   /* z-index:1; */
   /* padding: 1px; */
   height: auto;
@@ -924,7 +946,7 @@ height: 20vmin; */
   margin: 0 2vmin;
   margin-bottom: 2vh;
   font-size: 3vmin;
-  color: rgb(0, 0, 0);
+  color: var(--main-text-color);
   font-weight: 600;
 }
 
@@ -964,11 +986,20 @@ height: 20vmin; */
   margin: 0;
   color: var(--main-text-color);
 }
+
+.switch-btn{
+  background-color:var(--menu-color);
+  color: var(--menu-color-text);
+  border: 1px solid var(--menu-color);
+  border-radius: 8px;
+  font-size: 2vmin;
+  font-weight: 600;
+}
 /*t ############################################################################*/
 .title-link-header{
   margin: 0 2vmin;
   font-size: 6vmin;
-  color: rgb(0, 0, 0);
+  color: var(--main-text-color);
   font-weight: 700;
   height: fit-content;
 }
@@ -977,7 +1008,7 @@ height: 20vmin; */
   margin: 0 2vmin;
   margin-bottom: 2vh;
   font-size: 3vmin;
-  color: rgb(0, 0, 0);
+  color: var(--main-text-color);
   font-weight: 500;
 }
 
@@ -985,7 +1016,7 @@ height: 20vmin; */
   margin: 0 2vmin;
   margin-top: 2vh;
   font-size: 3vmin;
-  color: rgb(0, 0, 0);
+  color: var(--main-text-color);
   font-weight: 600;
   width: 90%;
   margin-bottom: 2vh;
@@ -1079,7 +1110,7 @@ height: 20vmin; */
 .title-gity{
   padding-left: 11vw;
   font-size: 2vw;
-  color: white;
+  color: var(--main-text-color);
   margin: 0;
   margin-top: 10px;
   /* width: 9vw; */
@@ -1087,8 +1118,8 @@ height: 20vmin; */
 
 .text-gity{
   padding-left: 11vw;
-  font-size: 1.5vmin;
-  color: white;
+  font-size: 2vmin;
+  color: var(--main-text-color);
   margin: 0;
   width: 16vw;
   letter-spacing: 2px;
@@ -1104,7 +1135,7 @@ height: 20vmin; */
   /* justify-content: center; */
   align-items: center;
   text-align: center;
-  color: white;
+  color: var(--main-text-color);
   letter-spacing: 2px;
   font-size: 1.5vw;
   margin-top: 9vh;
@@ -1112,7 +1143,7 @@ height: 20vmin; */
   cursor: pointer;
 }
 .text-overview{
-  color: white;
+  color: var(--main-text-color);
   font-family: 'Roboto', sans-serif;
   font-size: 1.2vw;
   word-spacing: 2px;
@@ -1131,7 +1162,7 @@ height: 20vmin; */
  /* margin-top: 2vh;  */
  border-radius: 8px;
  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.5);
- background-color: white;
+ background-color: var(--main-bg-color);
 }
 
 /*u ############################################################################*/
