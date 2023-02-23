@@ -21,7 +21,7 @@ body{
     /* max-height: 100vh; */
 }
 :root {
-  --main-bg-color: #fff;
+  --main-bg-color: rgb(244, 236, 236);
   --main-text-color: rgb(0, 0, 0);
   --main-bg-color2: rgba(85, 85, 85, 0.5);
   --main-bg-card: rgba(49, 49, 49, 0.5);
@@ -30,6 +30,7 @@ body{
   --menu-overall-color: rgba(0, 0, 0, 0.742);
   --menu-overall-text-color: rgb(255, 255, 255);
   --linkedin-bg-color: linear-gradient( to right,rgb(185, 249, 255) , rgb(255, 255, 255) 20%,  rgb(255, 255, 255) 80%, rgb(185, 249, 255) );
+  --footer-color: rgba(85, 85, 85, 0.5);
 }
 
 [data-theme="dark"] {
@@ -44,6 +45,7 @@ body{
   --menu-overall-color: rgba(255, 255, 255, 0.737);
   --menu-overall-text-color: rgb(0, 0, 0);
   --linkedin-bg-color: linear-gradient( to right,rgb(33, 0, 167)  , rgb(0, 0, 0) 20%,  rgb(0, 0, 0) 80%, rgb(33, 0, 167) );
+  --footer-color: #333;
 }
 
 /*a ############################################################################*/
@@ -128,6 +130,13 @@ a{
   
 }
 /*c ############################################################################*/
+.Copyright{
+  background-color: var(--footer-color);
+  color: var(--main-text-color);
+  font-size: 1.5vmin;
+  /* border: 1px solid var(--main-bg-color); */
+}
+
 .content{
   position: absolute;
   margin-left: 20px;
@@ -222,7 +231,32 @@ a{
 /*e ############################################################################*/
 
 /*f ############################################################################*/
+.footer-thanks{
+  position: relative;
+  margin: 2vh 0;
+  font-size: 5vmin;
+  width: 60vw;
+  height: fit-content;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2vmin 0;
+}
 
+.footer-img{
+  background-image: url("img/LB.png");
+  width: 10vmin;
+  height: 10vmin;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+  margin: 0;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 .footer{
   position: fixed;
   bottom: 0;
@@ -703,7 +737,8 @@ p {
 
 .QA-ask-link{
   position: relative;
-  margin: 1vmin auto;
+  margin: 2vmin auto;
+  margin-bottom: 5vh;
   padding: 1vmin;
   width: 25vw;
   height: auto;
@@ -959,7 +994,7 @@ height: 20vmin; */
   width: 100%;
   box-sizing: border-box;
   box-shadow: 0 -1px 10px rgba(0, 0, 0, .7);
-    transform-style: inherit;
+  transform-style: inherit;
 }
 
 .slide, .slide:before {
@@ -973,7 +1008,7 @@ height: 20vmin; */
   flex-direction: row;
   background-image: url("img/card-background.png");
   background-size:cover;
-
+  
 }
 
 #slide4{
@@ -983,8 +1018,26 @@ height: 20vmin; */
   background-color: var(--main-bg-color);
   width: 100%;
   height: auto;
-  margin: 0;
+  margin: auto;
   color: var(--main-text-color);
+  padding-top: 2vh;
+}
+
+#slide5{
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: row;
+  background-color: var(--footer-color);
+  width: 100%;
+  min-height: fit-content;
+  height: fit-content;
+  padding: 5vh auto;
+  color: var(--main-text-color);
+  box-shadow: 0px -3px 0px 0px  rgba(0, 0, 0, .7);
+
 }
 
 .switch-btn{
